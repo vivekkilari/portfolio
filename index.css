@@ -1,6 +1,7 @@
 :root {
     font-size: 8px;
     font-weight: bold;
+    text-align: right;
 }
 
 p, body, html, h1 {
@@ -8,14 +9,32 @@ p, body, html, h1 {
     margin: 0 0;
     padding: 0 0;
     overflow: hidden;
+
 }
 
 h1 {
     font-size: clamp(5rem, 7dvw, 16rem);
 }
 
+h2 {
+    font-size: clamp(4rem, 4dvw, 10rem);
+}
+
+h3 {
+    font-size: clamp(3rem, 3dvw, 8rem);
+    font-weight: normal;
+}
+
+p {
+    font-size: clamp(3rem, 1.5dvw, 4.5rem);
+    text-wrap: pretty;
+    font-weight: normal;
+    text-align: left;
+}
+
 a {
     text-decoration: none;
+    font-size: clamp(5rem, 7dvw, 16rem);
     color: #0E111B;
 }
 
@@ -26,21 +45,25 @@ a:hover {
 
 
 body {
-    height: 100dvh;
-    width: 100dvw;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .background {
     background-image: url('background.svg');
+    position: relative;
     background-size: cover;
 }
 
 .home {
     display: flex;
-    justify-content: space-between;
-    align-items: space-between;
+    flex-direction: row;
+    align-items: start;
 }
 
 #logoWrapper {
@@ -59,8 +82,8 @@ body {
     object-fit: fill;
 }
 
-.redBackground {
-    background: #DF1C26;
+.navBackground {
+    background: #0E111B;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +92,7 @@ body {
     box-sizing: border-box;
 
     min-width: 300px;
+    height: 100%;
 
     flex-grow: 6;
     flex-basis: 50dvw;
@@ -78,4 +102,93 @@ body {
 
 .wheat {
     color: #E5D9C3;
+}
+
+.navy {
+    color: #0E111B;
+}
+
+.navRow {
+    display: flex;
+    flex-direction: row;
+    width: 100dvw;
+    height: 20dvh;
+    margin-inline: 15%;
+
+    box-sizing: border-box;
+
+    justify-content: center;
+    gap: 4dvw;
+
+}
+
+#navHome {
+    flex-direction: column;
+}
+
+.svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    pointer-events: none;
+}
+
+#rectSvg {
+    transform: translateX(-25%);
+}
+
+#triSvg {
+    position: absolute;
+    height: 85%;
+    left: 0px;
+    transform: translate(10%, 15%);
+    visible: hidden;
+}
+
+#headshot {
+    position: relative;
+    z-index: 1;
+
+    min-width: 300px;
+    min-height: 300px;
+    width: 35dvw;
+    height: 35dvw;
+
+    transform: translate(7dvw, 7dvh);
+
+    border-radius: 50%;
+    border: 1px solid #0E111B;
+    background-color: #E5D9C3;
+}
+
+content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    z-index: 1;
+    color: #E5D9C3;
+
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    top: 50px;
+
+    box-sizing: border-box;
+    padding-right: 10dvw;
+
+    width: 40%;
+}
+
+#about > p {
+    width: 80%;
+    font-family: "Cairo", sans-serif;
 }
