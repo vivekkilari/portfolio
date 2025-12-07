@@ -124,6 +124,7 @@ body {
 
 #navHome {
     flex-direction: column;
+    padding-left: 1vw;
     gap: 1vh;
 }
 

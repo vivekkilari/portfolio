@@ -1,11 +1,11 @@
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .navRow {
         flex-direction: column;
         gap: 1vh;
         background-color: #DF1C26;
         box-sizing: border-box;
         padding-right: 5vw;
-        height: 25vh;
+        height: 35vh;
         margin-bottom: 5vh;
     }
 
