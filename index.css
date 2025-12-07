@@ -13,20 +13,20 @@ p, body, html, h1 {
 }
 
 h1 {
-    font-size: clamp(5rem, 7dvw, 16rem);
+    font-size: clamp(5rem, 7vw, 16rem);
 }
 
 h2 {
-    font-size: clamp(4rem, 4dvw, 10rem);
+    font-size: clamp(4rem, 4vw, 10rem);
 }
 
 h3 {
-    font-size: clamp(3rem, 3dvw, 8rem);
+    font-size: clamp(3rem, 3vw, 8rem);
     font-weight: normal;
 }
 
 p {
-    font-size: clamp(3rem, 1.5dvw, 4.5rem);
+    font-size: clamp(3rem, 1.5vw, 4.5rem);
     text-wrap: pretty;
     font-weight: normal;
     text-align: left;
@@ -34,7 +34,7 @@ p {
 
 a {
     text-decoration: none;
-    font-size: clamp(5rem, 7dvw, 16rem);
+    font-size: clamp(5rem, 7vw, 16rem);
     color: #0E111B;
 }
 
@@ -70,7 +70,7 @@ body {
     position: relative;
 
     flex-grow: 1;
-    flex-basis: 48dvw;
+    flex-basis: 48vw;
 }
 
 #logo {
@@ -78,7 +78,7 @@ body {
     right: 0;
     z-index: -1;
 
-    height: 100dvh;
+    height: 100vh;
     object-fit: fill;
 }
 
@@ -95,7 +95,7 @@ body {
     height: 100%;
 
     flex-grow: 6;
-    flex-basis: 50dvw;
+    flex-basis: 50vw;
     padding-right: 60px;
     overflow: hidden;
 }
@@ -111,14 +111,14 @@ body {
 .navRow {
     display: flex;
     flex-direction: row;
-    width: 100dvw;
-    height: 20dvh;
+    width: 100vw;
+    height: 20vh;
     margin-inline: 15%;
 
     box-sizing: border-box;
 
     justify-content: center;
-    gap: 4dvw;
+    gap: 4vw;
 
 }
 
@@ -152,10 +152,10 @@ body {
 
     min-width: 300px;
     min-height: 300px;
-    width: 35dvw;
-    height: 35dvw;
+    width: 35vw;
+    height: 35vw;
 
-    transform: translate(7dvw, 7dvh);
+    transform: translate(7vw, 7vh);
 
     border-radius: 50%;
     border: 1px solid #0E111B;
@@ -183,7 +183,7 @@ content {
     top: 50px;
 
     box-sizing: border-box;
-    padding-right: 10dvw;
+    padding-right: 10vw;
 
     width: 40%;
 }

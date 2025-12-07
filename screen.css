@@ -1,12 +1,12 @@
 @media (max-width: 1200px) {
     .navRow {
         flex-direction: column;
-        gap: 1dvh;
+        gap: 1vh;
         background-color: #DF1C26;
         box-sizing: border-box;
-        padding-right: 5dvw;
-        height: 25dvh;
-        margin-bottom: 5dvh;
+        padding-right: 5vw;
+        height: 25vh;
+        margin-bottom: 5vh;
     }
 
     .navRow h2 {
@@ -36,7 +36,7 @@
     #about {
         color: #0E111B;
         padding-right: 0;
-        margin-bottom: 10dvh;
+        margin-bottom: 10vh;
     }
 
     #about > p {
