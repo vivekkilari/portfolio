@@ -13,6 +13,10 @@
         margin: 0 0;
         color: #E5D9C3;
     }
+
+    #about {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1800px) {
@@ -31,12 +35,16 @@
 
     #headshot {
         transform: none;
+        margin-top: 5vh;
+        width: 40vh;
+        height: 40vh;
     }
 
     #about {
         color: #0E111B;
         padding-right: 0;
         margin-bottom: 10vh;
+        width: 50%;
     }
 
     #about > p {

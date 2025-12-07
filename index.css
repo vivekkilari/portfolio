@@ -13,20 +13,20 @@ p, body, html, h1 {
 }
 
 h1 {
-    font-size: clamp(5rem, 7vw, 16rem);
+    font-size: clamp(5rem, 9vw, 16rem);
 }
 
 h2 {
-    font-size: clamp(4rem, 4vw, 10rem);
+    font-size: clamp(4rem, 6vw, 10rem);
 }
 
 h3 {
-    font-size: clamp(3rem, 3vw, 8rem);
+    font-size: clamp(3rem, 5vw, 8rem);
     font-weight: normal;
 }
 
 p {
-    font-size: clamp(3rem, 1.5vw, 4.5rem);
+    font-size: clamp(3rem, 3vw, 4rem);
     text-wrap: pretty;
     font-weight: normal;
     text-align: left;
@@ -124,6 +124,7 @@ body {
 
 #navHome {
     flex-direction: column;
+    gap: 1vh;
 }
 
 .svg {
