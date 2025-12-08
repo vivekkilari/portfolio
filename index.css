@@ -286,6 +286,7 @@ content {
     background: #DF1C26;
 
     box-sizing: border-box;
+    padding-inline: 10vw;
     padding-bottom: 20vh;
 
     gap: 10px;
