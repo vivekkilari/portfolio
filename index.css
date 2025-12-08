@@ -113,17 +113,20 @@ body {
 
 .navRow {
     display: flex;
+    position: relative;
     flex-direction: row;
     width: 100vw;
     height: 20vh;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
     margin-inline: 15%;
 
     box-sizing: border-box;
 
     justify-content: center;
     gap: 4vw;
+
+    z-index: 2;
 
 }
 
@@ -170,6 +173,7 @@ body {
 }
 
 content {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -187,16 +191,19 @@ content {
     flex-direction: column;
     position: relative;
 
-    top: 50px;
+    top: 180px;
 
     box-sizing: border-box;
     padding-right: 10vw;
 
-    width: 40%;
+    width: 48%;
+    gap: 5rem;
 }
 
 #about > p {
-    width: 80%;
+    width: 90%;
+    color: #E5D9C3;
+    font-size: clamp(3rem, 4vw, 4rem);
     font-family: "Cairo", sans-serif;
 }
 
@@ -265,4 +272,34 @@ content {
     text-align: left;
     color: #0E111B;
     font-size: clamp(3rem, 2vw, 3.5rem);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background: #DF1C26;
+
+    box-sizing: border-box;
+    padding-bottom: 20vh;
+
+    gap: 10px;
+}
+
+#contact h3 {
+    text-align: center;
+}
+
+#contact h3 strong {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+#contact h4 {
+    font-size: clamp(2.5rem, 5vw, 6rem);
 }
