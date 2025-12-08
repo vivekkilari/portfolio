@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="screen.css">
   </head>
@@ -18,13 +17,26 @@
         <a href="about.html"><h2 class="navy">about me.</h2></a>
         <a href="contact.html"><h2 class="navy">contact.</h2></a>
     </nav>
-    <img src="./svg/Rectangle 1.svg" class="svg" id="rectSvg">
-    <img src="./svg/Polygon 1.svg" class="svg" id="triSvg">
-    <content>
-        <img src="./images/headshot.png" id="headshot">
-        <div id="about">
-            <h3>hi. my name is<br><strong>vivek kilari.</strong></h3>
-            <p>I’m a game programmer who specializes in gameplay and systems programming. I currently attend Michigan State University where I study Game Dev and Political Science.</p>
+    <content id="portfolio">
+        <div class="cardDisplay">
+            <div class="card">
+                <a href="https://langstonian.itch.io/trickstir" class="cardImgLink">
+                    <img class="cardImg" src="./images/trickstir.png">
+                </a>
+                <div class="cardText">
+                    <h4>Trickstir</h4>
+                    <p>Trickstir is a rotation based puzzle game where you try to get varying ingredients into a cauldron over the course of 30+ levels.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://d-m-g.itch.io/ignore-all-previous-instructions" class="cardImgLink">
+                    <img class="cardImg" src="./images/iapi.png">
+                </a>
+                <div class="cardText">
+                    <h4>Ignore All Previous Instructions</h4>
+                    <p>Ignore All Previous Instructions is a satirical strategy game where you play as the CEO of an AI company trying to take over the world.</p>
+                </div>
+            </div>
         </div>
     </content>
   </body>

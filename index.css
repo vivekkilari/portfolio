@@ -4,7 +4,7 @@
     text-align: right;
 }
 
-p, body, html, h1 {
+p, body, html, h1, h2, h3, h4 {
     box-sizing: border-box;
     margin: 0 0;
     padding: 0 0;
@@ -25,11 +25,14 @@ h3 {
     font-weight: normal;
 }
 
-p {
+h4, p {
     font-size: clamp(3rem, 3vw, 4rem);
-    text-wrap: pretty;
     font-weight: normal;
     text-align: left;
+}
+
+h4 {
+    font-weight: bold;
 }
 
 a {
@@ -113,6 +116,8 @@ body {
     flex-direction: row;
     width: 100vw;
     height: 20vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     margin-inline: 15%;
 
     box-sizing: border-box;
@@ -193,4 +198,71 @@ content {
 #about > p {
     width: 80%;
     font-family: "Cairo", sans-serif;
+}
+
+#portfolio {
+    padding-top: 2vw;
+    justify-content: center;
+}
+
+.cardDisplay {
+    width: 80vw;
+    height: 90%;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, min(60vw, 700px));
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.cardImgLink {
+    background: #0E111B;
+    width: 100%;
+    flex-grow: 2;
+    flex-basis: 200px;
+
+    box-sizing: border-box;
+    border: 1px solid #DF1C26;
+    border-radius: 5px;
+    overflow: hidden;
+
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImg {
+    margin: auto auto;
+    width: 98%;
+    height: 98%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    padding: 1vh .5vw;
+
+    gap: 10px;
+}
+
+.cardText > h4, p {
+    display: inline-block;
+    text-align: left;
+    color: #0E111B;
+    font-size: clamp(3rem, 2vw, 3.5rem);
 }
