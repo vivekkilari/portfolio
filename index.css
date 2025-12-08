@@ -172,7 +172,7 @@ body {
     background-color: #E5D9C3;
 }
 
-content {
+.pageContent {
     position: relative;
     display: flex;
     flex-direction: row;
